@@ -11,7 +11,7 @@
             body {
                 margin: 0;
                 padding: 0;
-                background-color: "whitesmoke";
+                background-color: whitesmoke;
                 font-family: "Noto Sans", sans-serif;
                 color: #3d3d3d;
             }
@@ -19,12 +19,12 @@
                 position: fixed;
                 margin-top: 0;
                 top: 10px;
-                left: 55px;
+                left: 100px;
                 font-size: 2em;
-                font-family: "Lora", serif;
+                font-family: "Noto Sans", sans-serif;
                 letter-spacing: .04em;
                 padding: 10px 15px;
-                background-color: rgba(255, 255, 255, 0.5);
+                background-color: lightblue;
                 border: 1px solid grey;
                 border-radius: 3px;
                 z-index: 800;
@@ -54,6 +54,10 @@
                 font-size: .9em;
                 line-height: 1.5em;
             }
+            .note {
+                font-size: .8em;
+                font-style: italic;
+            }
             #description a {
                 color: #005daa;
                 text-decoration: none;
@@ -64,15 +68,20 @@
         </style>
     </head>
     <body>
-        <h1 id="title">[update this] Leaflet Quick Start Guide</h1>
+        <h1 id="title">Exploring GIS</h1>
         <div id="map"></div>
         <div id="description">
             <h2>About this map</h2>
-            <p>This is the final result of the <a href="https://leafletjs.com/examples/quick-start/" target="_blank">Leaflet Quick Start Guide</a>. 
-                The map demonstrates Leaflet basics, such as setting up a Leaflet map, adding markers, polylines and popups.</p>
-            <p>The placement and styling of the title and description boxes is done using CSS. 
-                Check out the source code of this page to see how.</p>
-            <p>Map authored by: [insert your name here]</p>
+            <p>I am interested in exploring the precipitation totals for Grant County, New Mexico.  
+                I want to compare totals from the various locations within the county.</p>
+                <p class="note">For my week 5 project, I will use these precipitation totals to make a preliminary 
+                    assessment on the best residential garden locations for the county.</p>
+            <ul>
+                <li>Precipitation totals</li>
+                <li>Locations within Grant County</li>
+                <li>Potential residential garden locations</li>
+            </ul>
+            <p>Map authored by: D A Hamilton</p>
         </div>
         <script src="map.js"></script>
     </body>
